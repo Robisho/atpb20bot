@@ -15,7 +15,8 @@ headers = [
 
 
 def get_html():
-    url = 'https://www.istu.edu/schedule/?group=459121'
+    # 'https://www.istu.edu/schedule/?group=459121'  2020/2021
+    url = 'https://www.istu.edu/schedule/?group=461943'
     html = requests.get(url, headers=headers[randint(0, 3)])
     soup = BeautifulSoup(html.text, 'lxml')
     return soup
